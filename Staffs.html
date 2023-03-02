@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking Management System - Employee Registration Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		form {
+			width: 80%;
+			margin: auto;
+			margin-top: 20px;
+		}
+
+		label {
+			display: block;
+			margin-top: 10px;
+		}
+
+		input[type=text], input[type=email], input[type=password], select {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Banking Management System</h1>
+	</header>
+	<form>
+		<h2>Employee Registration Form</h2>
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="phone">Phone</label>
+		<input type="text" id="phone" name="phone" required>
+
+		<label for="position">Position</label>
+		<select id="position" name="position" required>
+			<option value="">Select a position</option>
+			<option value="teller">Teller</option>
+			<option value="manager">Manager</option>
+			<option value="analyst">Financial Analyst</option>
+		</select>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="confirm-password">Confirm Password</label>
+		<input type="password" id="confirm-password" name="confirm-password" required>
+
+		<input type="submit" value="Register">
+	</form>
+</body>
+</html>

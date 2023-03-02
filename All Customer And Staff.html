@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking Management System - All Customers and Staff</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 80%;
+			margin-top: 20px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+		}
+
+		th, td {
+			text-align: left;
+			padding: 12px;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: #fff;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Banking Management System</h1>
+	</header>
+	<div class="container">
+		<h2>All Customers and Staff</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>Type</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Example customer row -->
+				<tr>
+					<td>1</td>
+					<td>John Smith</td>
+					<td>johnsmith@example.com</td>
+					<td>555-1234</td>
+					<td>Customer</td>
+				</tr>
+				<!-- Example staff row -->
+				<tr>
+					<td>2</td>
+					<td>Jane Doe</td>
+					<td>jane.doe@example.com</td>
+					<td>555-5678</td>
+					<td>Staff</td>
+				</tr>
+				<!-- Add more customer and staff rows here -->
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

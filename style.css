@@ -1,0 +1,83 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+/* Set the background color and padding for the header */
+header {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+}
+
+/* Style the navigation menu */
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #ddd;
+}
+
+/* Style the main content area */
+main {
+	padding: 20px;
+}
+
+/* Style the welcome message and paragraph */
+main h1 {
+	font-size: 28px;
+	color: #333;
+	margin-top: 0;
+}
+
+main p {
+	margin-top: 0;
+}
+
+/* Set the background color and padding for the footer */
+footer {
+	background-color: #4CAF50;
+	padding: 10px;
+	color: #fff;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Style the table for the customers page */
+table.customers {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.customers th, table.customers td {
+	padding: 10px;
+	text-align: left;
+}
+
+table.customers th {
+	background-color: #ddd;
+}
+
+table.customers tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+table.customers tr:hover {
+	background-color: #ddd;
+}

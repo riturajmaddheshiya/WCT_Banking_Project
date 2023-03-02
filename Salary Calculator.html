@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff Salary Calculator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		form {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #fff;
+			border-radius: 10px;
+			padding: 30px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		label {
+			display: inline-block;
+			width: 150px;
+			text-align: right;
+			margin-right: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 15px;
+		}
+		input[type="text"] {
+			width: 200px;
+			padding: 5px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+		input[type="button"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 15px;
+		}
+		input[type="button"]:hover {
+			background-color: #3e8e41;
+		}
+		#result {
+			margin-top: 30px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #4CAF50;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Staff Salary Calculator</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br>
+		<label for="salary">Salary per day:</label>
+		<input type="text" id="salary" name="salary"><br>
+		<label for="days">Presenting days:</label>
+		<input type="text" id="days" name="days"><br>
+		<input type="button" value="Calculate Salary" onclick="calculateSalary()">
+	</form>
+
+	<div id="result"></div>
+
+	<script>
+		function calculateSalary() {
+			var name = document.getElementById("name").value;
+			var salary = parseFloat(document.getElementById("salary").value);
+			var days = parseFloat(document.getElementById("days").value);
+			var totalSalary = salary * days;
+			document.getElementById("result").innerHTML = "Dear " + name + ", your salary for " + days + " days is: $" + totalSalary.toFixed(2);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking Management System - Account Details</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		table {
+			width: 80%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th, td {
+			padding: 12px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.btn-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		.btn {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			margin-right: 10px; /* Add a right margin of 10px */
+		}
+
+		.btn:last-child {
+			margin-right: 0; /* Remove the margin from the last button */
+		}
+
+		.btn:hover {
+			background-color: #2E8B57;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Banking Management System</h1>
+	</header>
+	<div class="container">
+		<h2>Account Details</h2>
+		<table>
+			<tr>
+				<th>Account Number</th>
+				<td>123456789</td>
+			</tr>
+			<tr>
+				<th>Account Type</th>
+				<td>Savings</td>
+			</tr>
+			<tr>
+				<th>Balance</th>
+				<td>$1,000.00</td>
+			</tr>
+			<tr>
+				<th>Interest Rate</th>
+				<td>2.5%</td>
+			</tr>
+			<tr>
+				<th>Withdrawals</th>
+				<td>5</td>
+			</tr>
+			<tr>
+				<th>Deposits</th>
+				<td>10</td>
+			</tr>
+			<tr>
+				<th>Created Date</th>
+				<td>01/01/2023</td>
+			</tr>
+			<tr>
+				<th>Last Modified</th>
+				<td>03/01/2023</td>
+			</tr>
+			<tr>
+				<th>Owner ID</th>
+				<td>1234567890</td>
+			</tr>
+		</table>
+		<div class="btn-container">
+			<button class="btn">Edit</button>
+			<button class="btn">Delete</button>
+		</div>
+	</div>
+</body>
+</html>
